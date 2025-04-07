@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Моя страница</title>
+    <title>Мой учебный сайт</title>
     <style>
         :root {
-            --dark-bg: #1a1a1a;        /* Тёмный фон */
-            --deep-red: #5c0e0e;       /* Глубокий красный */
-            --soft-red: #8a2a2a;       /* Мягкий красный (для акцентов) */
-            --light-text: #f0e6e6;     /* Светлый текст */
-            --gold-accent: #d4af37;    /* Золотой акцент (опционально) */
+            --dark-bg: #1a1a1a;
+            --deep-red: #5c0e0e;
+            --soft-red: #8a2a2a;
+            --light-text: #f0e6e6;
+            --gold-accent: #d4af37;
         }
 
         body {
@@ -32,7 +32,6 @@
             color: var(--soft-red);
             font-size: 2.5rem;
             margin-bottom: 1rem;
-            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
         }
 
         p {
@@ -42,32 +41,30 @@
             opacity: 0.9;
         }
 
-        /* Дополнительные элементы (если нужно) */
-        .divider {
-            width: 100px;
-            height: 2px;
+        .nav-button {
+            display: inline-block;
+            background: var(--deep-red);
+            color: white;
+            padding: 12px 24px;
+            border-radius: 4px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            margin-top: 1rem;
+        }
+
+        .nav-button:hover {
             background: var(--soft-red);
-            margin: 1.5rem auto;
-            opacity: 0.5;
-        }
-
-        /* Анимация для плавного появления */
-        @keyframes fadeIn {
-            from { opacity: 0; transform: translateY(10px); }
-            to { opacity: 1; transform: translateY(0); }
-        }
-
-        body {
-            animation: fadeIn 0.8s ease-out;
+            transform: translateY(-2px);
         }
     </style>
 </head>
 <body>
-    <h1>Шалом славяне</h1>
-    <div class="divider"></div>
-    <p>здесь будут мои лабараторные работы</p>
+    <h1>Добро пожаловать!</h1>
+    <p>Это мой учебный сайт для размещения лабораторных работ</p>
+    <a href="labs.html" class="nav-button">Посмотреть список лабораторных</a>
 
-    <!-- Yandex.Metrika counter -->
+    <!-- Яндекс.Метрика -->
     <script type="text/javascript" >
        (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
        m[i].l=1*new Date();
@@ -83,6 +80,5 @@
        });
     </script>
     <noscript><div><img src="https://mc.yandex.ru/watch/100834018" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
-    <!-- /Yandex.Metrika counter -->
 </body>
 </html>
